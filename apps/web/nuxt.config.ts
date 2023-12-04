@@ -1,17 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { compression } from "vite-plugin-compression2";
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  vite: {
-    plugins: [
-      compression(),
-      compression({
+  modules: [
+    [
+      "@nuxt-modules/compression",
+      {
         algorithm: "brotliCompress",
-        exclude: [/\.(br)$/, /\.(gz)$/],
-        deleteOriginalAssets: false,
-      }),
+      },
     ],
+  ],
+  vite: {
+    plugins: [],
     vue: {
       customElement: true,
     },
