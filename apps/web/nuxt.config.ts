@@ -2,6 +2,11 @@
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    head: {
+      title: 'Gadiel.dev',
+    }
+  },
   modules: [
     [
       "@nuxt-modules/compression",
