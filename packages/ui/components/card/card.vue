@@ -9,7 +9,7 @@ const props = defineProps<{
 <template>
   <a
     :class="props.class"
-    :href="`${props.href}?utm_source=create-turbo&utm_medium=basic&utm_campaign=create-turbo`"
+    :href="`${props.href}`"
     rel="noopener noreferrer"
     target="_blank"
   >

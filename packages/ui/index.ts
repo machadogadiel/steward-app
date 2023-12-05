@@ -1,5 +1,13 @@
-import Card from "./src/card.vue";
-import Gradient from "./src/gradient.vue";
-import Page from "./src/page.vue";
+import { defineNuxtModule } from "@nuxt/kit";
+import { join } from "path";
 
-export { Card, Gradient, Page };
+export default defineNuxtModule({
+  setup(_, nuxt) {
+    nuxt.hook("components:dirs", (dirs) => {
+      dirs.push({
+        path: join(__dirname, "components"),
+        prefix: 's'
+      });
+    });
+  },
+});

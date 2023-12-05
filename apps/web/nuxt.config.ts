@@ -4,8 +4,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      title: 'Gadiel.dev',
-    }
+      title: "App",
+    },
   },
   modules: [
     [
@@ -14,6 +14,7 @@ export default defineNuxtConfig({
         algorithm: "brotliCompress",
       },
     ],
+    "ui",
   ],
   vite: {
     plugins: [],
