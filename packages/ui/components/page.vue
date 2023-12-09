@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const LINKS = [
   {
-    title: "Example",
+    title: "Example teste ci",
     href: "/example/1",
     description: "Lorem ipsum...",
   },
@@ -10,7 +10,6 @@ const LINKS = [
 
 <template>
   <main class="main">
-    t
     <div class="grid">
       <s-card
         v-for="{ title, href, description } in LINKS"
