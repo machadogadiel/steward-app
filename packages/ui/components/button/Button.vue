@@ -40,6 +40,7 @@ withDefaults(
   border-width: 1px;
   border-radius: 6px;
   border-style: solid;
+  cursor: pointer;
 }
 
 .primary {
@@ -49,8 +50,7 @@ withDefaults(
 }
 
 .primary:hover {
-  background-color: rgb(93, 93, 93);
-  
+  background-color: rgb(93, 93, 93);  
 }
 
 .secondary {
