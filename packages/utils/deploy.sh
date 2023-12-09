@@ -10,8 +10,6 @@ pnpm install
 turbo build
 
 # 4. Kill all screens
-screen -ls | grep 'nuxt' | awk '{print $1}' | xargs -I % -t screen -X -S % qui
-pkill -9 -f 'node .output/server/index.mjs'
 screen -ls | grep 'nuxt' | awk '{print $1}' | xargs -I % -t screen -X -S % quit
 pkill -9 -f 'node .output/server/index.mjs'
 
