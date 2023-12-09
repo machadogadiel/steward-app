@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 1. Fetch the latest code from remote
-git pull -f origin main
+cd ~/Projects/steward-app && git pull -f origin master
 
 # 2. Install dependencies
 pnpm install
@@ -16,4 +16,4 @@ pkill screen
 screen -S nuxtjs
 
 # 6. Serve page
-turbo serve
+cd ~/Projects/steward-app && turbo serve
