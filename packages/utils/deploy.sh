@@ -13,8 +13,5 @@ turbo build
 screen -ls | grep 'nuxt' | awk '{print $1}' | xargs -I % -t screen -X -S % quit
 pkill -9 -f 'node .output/server/index.mjs'
 
-# 5. Make new screen
-screen -S nuxt
-
-# 6. Serve page
-turbo serve
+# 5. Make new screen and serve page
+screen -S nuxt && turbo serve
