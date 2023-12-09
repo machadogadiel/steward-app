@@ -1,17 +1,7 @@
 <script setup lang="ts">
 const LINKS = [
   {
-    title: "Example teste ci",
-    href: "/example/1",
-    description: "Lorem ipsum...",
-  },
-  {
-    title: "Example teste ci 3",
-    href: "/example/1",
-    description: "Lorem ipsum...",
-  },
-  {
-    title: "Example teste ci 34",
+    title: "Teste CI - Bea 1234",
     href: "/example/1",
     description: "Lorem ipsum...",
   },
