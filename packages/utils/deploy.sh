@@ -1,4 +1,5 @@
 # 1. Fetch the latest code from remote
+git config --global --add safe.directory /home/ubuntu/Projects/steward-app
 cd /home/ubuntu/Projects/steward-app && git pull -f origin master
 
 # 2. Install dependencies
