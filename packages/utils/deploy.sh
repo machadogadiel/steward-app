@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # 1. Fetch the latest code from remote
 cd ~/Projects/steward-app && git pull -f origin master
 
