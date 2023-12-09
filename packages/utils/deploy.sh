@@ -10,10 +10,11 @@ pnpm install
 turbo build
 
 # 4. Kill all screens
-pkill screen
+screen -ls | grep 'nuxt' | awk '{print $1}' | xargs -I % -t screen -X -S % quit
+pkill -9 -f 'node .output/server/index.mjs'
 
 # 5. Make new screen
-screen -S nuxtjs
+screen -S nuxt
 
 # 6. Serve page
-cd ~/Projects/steward-app && turbo serve
+turbo serve
