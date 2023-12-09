@@ -4,6 +4,14 @@
 export PATH="/home/ubuntu/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
+# pnpm
+export PNPM_HOME="/home/ubuntu/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
 # 1. Fetch the latest code from remote
 cd ~/Projects/steward-app && git pull -f origin master
 
