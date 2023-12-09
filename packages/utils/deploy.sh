@@ -8,7 +8,7 @@ eval "`fnm env`"
 cd ~/Projects/steward-app && git pull -f origin master
 
 # 2. Install dependencies
-&& pnpm install
+pnpm install
 
 # 3. Build step that compiles code, bundles assets, etc.
 turbo build
