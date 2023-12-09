@@ -5,6 +5,11 @@ const LINKS = [
     href: "/example/1",
     description: "Lorem ipsum...",
   },
+  {
+    title: "Teste CI - Bea 1234",
+    href: "/example/1",
+    description: "Lorem ipsum...",
+  },
 ];
 </script>
 
