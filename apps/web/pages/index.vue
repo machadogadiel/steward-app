@@ -1,6 +1,6 @@
 <template>
   <div>
-    <s-page></s-page>
+    <smexy-page></smexy-page>
   </div>
 </template>
 

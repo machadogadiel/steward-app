@@ -11,7 +11,7 @@ const LINKS = [
 <template>
   <main class="main">
     <div class="grid">
-      <s-card
+      <smexy-card
         v-for="{ title, href, description } in LINKS"
         class="card"
         :href="href"
@@ -19,7 +19,7 @@ const LINKS = [
         :title="title"
       >
         {{ description }}
-      </s-card>
+      </smexy-card>
     </div>
   </main>
 </template>

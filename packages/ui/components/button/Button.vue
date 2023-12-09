@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { cva, type VariantProps } from "class-variance-authority";
 
+//types
+// - filled
+// - outline
+// - elevated
+// - with icon
+// - without icon
+
 const button = cva("button", {
   variants: {
     type: {
@@ -10,7 +17,13 @@ const button = cva("button", {
     size: {
       small: "small",
       medium: "medium",
+      big: "big"
     },
+    btnStyle: {
+      fill: "fill",
+      outline: "outline",
+      flat: "flat"
+    }
   },
   compoundVariants: [
     { type: "primary", size: "medium", class: "primaryMedium" },
@@ -20,16 +33,17 @@ const button = cva("button", {
 type ButtonProps = VariantProps<typeof button>;
 
 withDefaults(
-  defineProps<{ type?: ButtonProps["type"]; size?: ButtonProps["size"] }>(),
+  defineProps<{ type?: ButtonProps["type"]; size?: ButtonProps["size"]; btnStyle?: ButtonProps["btnStyle"]}>(),
   {
     type: "primary",
     size: "medium",
+    btnStyle: "fill"
   }
 );
 </script>
 
 <template>
-  <button :class="button({ type, size })">
+  <button :class="button({ type, size, btnStyle })">
     <slot />
   </button>
 </template>
@@ -41,7 +55,9 @@ withDefaults(
   border-radius: 6px;
   border-style: solid;
   cursor: pointer;
+  height: fit-content;
 }
+
 
 .primary {
   color: rgb(255 255 255);
@@ -64,16 +80,25 @@ withDefaults(
 }
 
 .small {
-  font-size: 0.875rem /* 14px */;
-  line-height: 1.25rem /* 20px */;
+  font-size: 1.4rem /* 14px */;
+  line-height: 2rem /* 20px */;
   padding: 0.25rem 0.5rem;
 }
 
 .medium {
-  font-size: 1rem /* 16px */;
-  line-height: 1.5rem /* 24px */;
+  font-size: 1.6rem /* 16px */;
+  line-height: 2.4rem /* 24px */;
   padding: 0.5rem 1rem;
 }
 
+.big {
+  font-size: 2.4rem;
+  line-height: 2.8rem; 
+  padding: 0.75rem 1.5rem;
+}
+
+.fill {
+  background-color: crimson !important;
+}
 
 </style>
