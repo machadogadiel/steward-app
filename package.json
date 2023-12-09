@@ -6,7 +6,8 @@
       "dev": "turbo run dev",
       "lint": "turbo run lint",
       "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-      "serve": "turbo run serve"
+      "serve": "turbo run serve",
+      "ci": "chmod +x packages/utils/deploy.sh && ./packages/utils/deploy.sh"
     },
     "devDependencies": {
       "eslint": "^8.48.0",

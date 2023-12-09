@@ -1,5 +1,6 @@
 <template>
   <div>
+    test
     <s-page></s-page>
   </div>
 </template>
