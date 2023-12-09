@@ -6,7 +6,7 @@ const LINKS = [
     description: "Lorem ipsum...",
   },
   {
-    title: "Teste CI - B2123434ea",
+    title: "Teste CI - sem sucesso",
     href: "/example/1",
     description: "Lorem ipsum...",
   },
