@@ -17,8 +17,6 @@ cd ~/Projects/steward-app
 
 git pull -f origin master
 
-node -v
-
 # 2. Install dependencies
 pnpm install
 
@@ -30,4 +28,4 @@ screen -ls | grep 'nuxt' | awk '{print $1}' | xargs -I % -t screen -X -S % quit
 pkill -9 -f 'node .output/server/index.mjs'
 
 # 5. Make new screen and serve page
-# screen -dmS nuxt bash -c 'cd ~/Projects/steward-app && turbo serve; exec bash'
+screen -dmS nuxt bash -c 'cd ~/Projects/steward-app && turbo serve; exec bash'
