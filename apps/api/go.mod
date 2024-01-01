@@ -2,14 +2,12 @@ module api
 
 go 1.21.5
 
-require (
-	github.com/uptrace/bun/driver/pgdriver v1.1.16
-	github.com/urfave/cli v1.22.14
-)
+require github.com/uptrace/bun/driver/pgdriver v1.1.16
 
 require (
 	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
+	github.com/stretchr/testify v1.8.4 // indirect
 	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
 )
 
@@ -32,7 +30,7 @@ require (
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
-	golang.org/x/crypto v0.14.0 // indirect
+	golang.org/x/crypto v0.17.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
 	mellium.im/sasl v0.3.1 // indirect
 )
