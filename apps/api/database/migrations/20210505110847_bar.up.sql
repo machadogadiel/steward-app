@@ -1,7 +1,6 @@
-CREATE TABLE test (
-  id bigint PRIMARY KEY
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  Name varchar(255),
+  Password varchar(255)
 );
 
---bun:split
-
-ALTER TABLE test ADD COLUMN name varchar(100);

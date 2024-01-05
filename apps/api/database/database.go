@@ -16,7 +16,7 @@ import (
 )
 
 func GetDatabase() *bun.DB {
-	dsn := "postgres://postgres:@localhost:5432/postgres?sslmode=disable"
+	dsn := "postgres://postgres:postgres@database:5432/postgres?sslmode=disable"
 
 	sqldb := sql.OpenDB(pgdriver.NewConnector(pgdriver.WithDSN(dsn)))
 
